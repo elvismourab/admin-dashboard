@@ -4,3 +4,25 @@
     padding: 0;
     line-height: 1.5;
 }
+
+#content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+aside {
+    border: 1px solid blue;
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+header {
+    border: 1px solid red;
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+main {
+    border: 1px solid green;
+    grid-area: 2 / 2 / 6 / 6;
+}

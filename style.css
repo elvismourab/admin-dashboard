@@ -19,7 +19,7 @@ aside {
 
 header {
     border: 1px solid red;
-    grid-area: 1 / 2 / 2 / 6;
+    grid-area: 1 / 2 / 2 / 6;   
 }
 
 main {

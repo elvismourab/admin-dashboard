@@ -13,16 +13,39 @@
 }
 
 aside {
-    border: 1px solid blue;
+    background-color: blue;
     grid-area: 1 / 1 / 6 / 2;
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    padding: 1rem;
+    color: #fff;
 }
 
 header {
     border: 1px solid red;
-    grid-area: 1 / 2 / 2 / 6;   
+    grid-area: 1 / 2 / 2 / 6;
 }
 
 main {
     border: 1px solid green;
     grid-area: 2 / 2 / 6 / 6;
+}
+
+aside img {
+    width: 10%;
+    filter: invert(100%) sepia(97%) saturate(13%) hue-rotate(210deg) brightness(104%) contrast(104%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside h1,
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
